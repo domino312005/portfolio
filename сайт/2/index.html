@@ -34,6 +34,7 @@
 		</div>
 
 	</header>
+	
 	<button class="m_icon"><i class="fa fa-bars"></i></button>
 
 
@@ -47,10 +48,11 @@
   	 	var menu = $('.m-navbar');
   	 	m_icon.on('click', function (event) {
   	 		event.preventDefault();
-  	 		menu.show(100);
+  	 		menu.show();
   	 		menu.toggleClass('animating');
   	 		
   	 	})
+  	 	
   	 })
   </script>
 </body>
