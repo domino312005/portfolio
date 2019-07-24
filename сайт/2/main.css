@@ -22,7 +22,6 @@ body{
 
 .header{
 	padding: 20px;
-	width: 100% !important;
 	background: #553532;
 	justify-content: space-between;
 	-ms-align-items: center;
