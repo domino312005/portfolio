@@ -7,14 +7,15 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-	<ul class="d-flex m-navbar">
+	<div class="m-navbar">
+	<ul class="m-ul">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Литература</a></li>
 				<li><a href="#">Кто мы?</a></li>
 				<li><a href="#">Уроки</a></li>
 				<li><a href="#">Вход</a></li>
 			</ul>
+			</div>
 	<header class="d-flex header">
 
 		<div class="logo">
@@ -46,6 +47,7 @@
   	 	var menu = $('.m-navbar');
   	 	m_icon.on('click', function (event) {
   	 		event.preventDefault();
+  	 		menu.show(100);
   	 		menu.toggleClass('animating');
   	 		
   	 	})
