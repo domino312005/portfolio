@@ -20,11 +20,11 @@ body{
 }
 
 
+
 .header{
 	padding: 20px;
 	background: #55ee34;
 	justify-content: space-between;
-	-ms-align-items: center;
 	align-items: center;
 }
 
@@ -35,6 +35,22 @@ ul{
 ul a{
 	text-decoration: none;
 	color: #000;
+}
+
+.square{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+
+.main {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+footer {
+  height: 80px;
+  margin-top: -80px;
 }
 
 .logo{
