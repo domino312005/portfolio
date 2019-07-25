@@ -8,6 +8,11 @@
 </head>
 <body>
 	<div class="m-navbar">
+		<div class="logo">
+			<i class="fa fa-grav" aria-hidden="true"></i>
+			BIGJOHN
+
+		</div>
 	<ul class="m-ul">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Литература</a></li>
@@ -42,18 +47,12 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
 ></script>
   <script>
-  	 $(function () {
-  	 	var m_icon = $('.m_icon');
-  	 	var close = $('.close')
-  	 	var menu = $('.m-navbar');
-  	 	m_icon.on('click', function (event) {
-  	 		event.preventDefault();
-  	 		menu.show();
-  	 		menu.toggleClass('animating');
-  	 		
-  	 	})
+	$('.m-navbar').slideUp(1);
+  	 $('.m_icon').on('click', function () {
+  	 	$('.m-navbar').slideToggle(1000)
+  	 });
   	 	
-  	 })
+  	 
   </script>
 </body>
 </html>

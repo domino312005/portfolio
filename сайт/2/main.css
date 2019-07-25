@@ -22,7 +22,7 @@ body{
 
 .header{
 	padding: 20px;
-	background: #553532;
+	background: #55ee34;
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
@@ -34,7 +34,7 @@ ul{
 
 ul a{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 .logo{
@@ -53,21 +53,25 @@ ul a{
 }
 
 .ul li:hover{
-	border: 1px solid aqua;
+	border: 1px solid black;
 	border-style: dashed;
-	border-radius: 10px;
-	background: #000;
-	transition: 0.2s;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	transition: 0.5s;
+}
+
+.m-navbar .logo{
+	margin: 20px;
 }
 
 .m-navbar{
 	width: 100%;
-	height: 100vh;
-	background: #553532;
+	height: 40vh;
+	background: #55ee34;
 	position: fixed;
-	font-size: 35pt;
-	visibility: hidden;
-	transition: 0.5s;
+	font-size: 15pt;
+	
 	
 }
 
@@ -79,7 +83,11 @@ ul a{
 
 .m-ul{
 	margin-left: 40%;
-	margin-top: 50px;
+	margin-top: 20px;
+}
+
+.m-ul li{
+	margin-bottom: 5px;
 }
 
 .animating{
@@ -91,7 +99,7 @@ ul a{
 .m-navbar li{
 	height: 3vh;
 	width: auto;
-	margin-bottom: 6vh;
+	margin-bottom: 2vh;
 }
 
 
