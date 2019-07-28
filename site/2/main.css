@@ -23,8 +23,15 @@
 	src:url(fonts/Montserrat-Light.ttf);
 }
 
+@font-face{
+	font-family: RalewaySemiBold;
+	src:url(fonts/Raleway-SemiBold.ttf);
+}
 
 
+html{
+	scroll-behavior: smooth;
+}
 
 body{
 	padding: 0;
@@ -194,6 +201,69 @@ i{
 	margin-left: 100px;
 }
 
+.cards{
+	display: flex;
+	padding: 80px 190px;
+	justify-content: center;
+}
+
+.card{
+	text-align: center;
+}
+
+.card:hover hr{
+	width: 52%;
+	background: #c7b299;
+	height: 3%;
+	transition: 0.2s;
+}
+
+.card_img_1{
+	margin-bottom: 10px;
+}
+.card_img_2{
+	margin-bottom: 20px;
+}
+.card_img_3{
+	margin-bottom: 15px;
+}
+.card_img_4{
+	margin-bottom: 25px;
+}
+
+
+
+hr{
+	width: 50%;
+	height: 2%;
+	border-radius: 5px;
+	background: gray;
+	border:none;
+}
+
+.card:hover .card_h1{
+	color: #c7b299;
+	transition: 0.2s;
+}
+
+
+
+.card_h1{
+	color: black;
+	font-size: 22pt;
+	font-family: RalewaySemiBold;
+}
+
+.card_p{
+	font-size: 14pt;
+	color: #8c8c8c;
+	font-family: MontserratLight;
+	margin-bottom: 50px;
+}
+
+
+
+
 .nav-m a{
 	color: white;
 	font-family: MontserratLight;
@@ -253,6 +323,18 @@ i{
 
 @media (max-width: 1199px){
 	*{font-size: 14pt;}
+	.card{
+		font-size: 13pt;
+		margin-left: 40px;
+}
+
+.card:nth-child(1){
+		
+		margin-left: 0;
+}
+
+
+
 }
 
 @media (max-width: 991px){
@@ -261,5 +343,24 @@ i{
 	}
 	i{
 		visibility: visible;
+	}
+
+	.cards{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin-top: 80px;
+		padding: 0;
+	}
+
+	.card{
+		margin-bottom: 20px;
+	}
+
+	.card_p{
+		margin-bottom: 10px;
+		width: 100%;
 	}
 }
