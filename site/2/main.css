@@ -28,6 +28,11 @@
 	src:url(fonts/Raleway-SemiBold.ttf);
 }
 
+@font-face{
+	font-family: RalewayRegular;
+	src:url(fonts/Raleway-Regular.ttf);
+}
+
 
 html{
 	scroll-behavior: smooth;
@@ -62,9 +67,11 @@ a{
 	text-decoration: none;
 }
 
-body,html{
-	overflow-x: hidden;
+html, body {     
+     height: 100%; 
 }
+
+
 
 .header{
 	display: flex;
@@ -186,6 +193,37 @@ body,html{
 	border-right: 3px solid rgba(46, 50, 50, 0.32);
 }
 
+
+.about_footer_button{
+	font-family: RalewayExtraBold;
+	width: 170px;
+	height: 55px;
+	font-size: 9pt;
+	outline: none;
+	border:none;
+	border-radius: 3px;
+	background: #998675;
+	color: white;
+
+	border-bottom: 3px solid rgba(46, 50, 50, 0.32);
+}
+
+.about_footer_button:hover{
+	transition: 0.3s;
+	border-right: 3px solid rgba(46, 50, 50, 0.32);
+}
+
+.about_footer_button:active{
+	transition: 0.3s;
+	border: 3px solid rgba(46, 50, 50, 0.32);
+}
+
+.wrap_main_button:active{
+	transition: 0.3s;
+	border: 3px solid rgba(46, 50, 50, 0.32);
+}
+
+
 i{
 	visibility: hidden;
 	color: white;
@@ -230,9 +268,6 @@ i{
 .card_img_4{
 	margin-bottom: 25px;
 }
-
-
-
 hr{
 	width: 50%;
 	height: 2%;
@@ -240,20 +275,15 @@ hr{
 	background: gray;
 	border:none;
 }
-
 .card:hover .card_h1{
 	color: #c7b299;
 	transition: 0.2s;
 }
-
-
-
 .card_h1{
 	color: black;
 	font-size: 22pt;
 	font-family: RalewaySemiBold;
 }
-
 .card_p{
 	font-size: 14pt;
 	color: #8c8c8c;
@@ -261,13 +291,61 @@ hr{
 	margin-bottom: 50px;
 }
 
+#about{
+	display: flex;
+	flex-direction: column;
+}
 
 
+.image{
+	position: absolute;
+}
+.images_1{
+	left: 70px;
+	top: 80px;
+}
+.images_2{
+	left: 350px;
+	top: 0;
+}
+.images_3{
+	left: 600px;
+	top: 80px;
+
+}
+
+
+.swiper-container {
+      width: 90%;
+      height: 610px;
+      margin-left: 0;
+}
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      }
+
+
+.about_footer_h2{
+	font-family: RalewayRegular;
+	color: white;
+}
+
+strong{
+	color:#bfab94;
+}
 
 .nav-m a{
 	color: white;
 	font-family: MontserratLight;
 }
+
+.about_footer_p{
+	font-family: MontserratLight;
+	color:#615855;
+	font-size: 15pt;
+}
+
 .nav-m li{
 	display: flex;
 	margin-left: 30px;
@@ -278,6 +356,41 @@ hr{
 	transition: 0.3s;
 	color: #bfab94;
 }
+
+
+.about_footer{
+  background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  height: 80px;
+  margin-top: 50px;
+  padding: 25px 160px;
+  padding-bottom: 25px;
+  font-size: 14pt;
+  position: relative;
+  display: flex;
+	justify-content: space-between;
+
+	
+  flex-wrap: wrap;
+}
+
+.about_h1{
+	color: #555555;
+	font-family: RalewaySemiBold;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.about_p{
+	font-family: MontserratLight;
+	color: #8c8c8c;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	width: 750px;
+	text-align: center;
+}
+
 
 @keyframes slidein {
   25% {
@@ -321,6 +434,7 @@ hr{
 
 
 
+
 @media (max-width: 1199px){
 	*{font-size: 14pt;}
 	.card{
@@ -328,10 +442,30 @@ hr{
 		margin-left: 40px;
 }
 
+	.image{
+		visibility: hidden;
+	}
+	.about_images{
+		height: 0;
+	}
+
 .card:nth-child(1){
 		
 		margin-left: 0;
 }
+		.cards{
+		flex-wrap: wrap;
+		padding: 0;
+		padding-top: 80px;
+	}
+
+	.card_p{
+		margin-bottom: 15px;
+	}
+
+	hr{
+		margin-bottom: 5%;
+	}
 
 
 
@@ -355,6 +489,14 @@ hr{
 		padding: 0;
 	}
 
+	.swiper-container{
+		display: none;
+	}
+
+	.about_footer_button{
+		margin-top: 5px;
+	}
+
 	.card{
 		margin-bottom: 20px;
 	}
@@ -364,3 +506,4 @@ hr{
 		width: 100%;
 	}
 }
+

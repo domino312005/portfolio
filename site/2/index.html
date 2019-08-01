@@ -5,6 +5,8 @@
 	<title>Emil Faybishenko</title>
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
 </head>
 <body>
 	<div id="main">
@@ -60,8 +62,6 @@
 				<p class="card_h1">Web Design</p>
 				<p class="card_p">Nam liber tempor cum soluta nobis<br />eleifend option congue nihil imperdiet<br /> doming id quod mazim.</p><hr>
 			</div>
-
-
 			<div class="card second_card"><img src="img/icon2.png" class="card_img_2 card_img" alt="">
 				<p class="card_h1">Development</p>
 				<p class="card_p">Nam liber tempor cum soluta nobis<br />eleifend option congue nihil imperdiet<br /> doming id quod mazim.</p><hr></div>
@@ -73,6 +73,28 @@
 				<p class="card_h1">Marketing</p>
 				<p class="card_p">Nam liber tempor cum soluta nobis<br />eleifend option congue nihil imperdiet<br /> doming id quod mazim.</p><hr></div>
 		</div>
+
+		<h1 class="about_h1">Waxom is Realization of your Ideas.</h1>
+		<p class="about_p">nvestigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+		 <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/browser1.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/browser2.png)"></div>
+      <div class="swiper-slide" style="background-image:url(img/browser3.png)"></div>
+ 
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+	
+	<div class="about_footer">
+		<h2 class="about_footer_h2"><strong>Waxom</strong> Multipurpose WordPress Theme</h2>
+		<p class="about_footer_p">Don't Forget to Rate the Template. Thanks so much!</p>
+		<button class="about_footer_button">PURCHASE NOW</button>
+	</div>
+		
+
+
 	</div>
 
 
@@ -86,9 +108,13 @@
 
 	<!-------------scripts------------->
 
-
+  <script src="dist/js/swiper.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
 	<script>	
+		
+
+
 		$('.bar-icon').on('click', function (){
 			$('.nav-m').slideToggle(900);
 		});
@@ -124,6 +150,21 @@
 		$('.fourth_card').on('mouseleave', function (){
 			$('.card_img_4').attr('src' , 'img/icon4.png');
 		});
+	</script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 10,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
 	</script>
 </body>
 </html>
