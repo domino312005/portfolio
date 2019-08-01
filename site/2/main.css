@@ -218,6 +218,30 @@ html, body {
 	border: 3px solid rgba(46, 50, 50, 0.32);
 }
 
+.portfolio_button{
+	font-family: RalewayExtraBold;
+	width: 170px;
+	height: 55px;
+	font-size: 9pt;
+	outline: none;
+	border:none;
+	border-radius: 3px;
+	background: #998675;
+	color: white;
+
+	border-bottom: 3px solid rgba(46, 50, 50, 0.32);
+}
+
+.portfolio_button:hover{
+	transition: 0.3s;
+	border-right: 3px solid rgba(46, 50, 50, 0.32);
+}
+
+.portfolio_button:active{
+	transition: 0.3s;
+	border: 3px solid rgba(46, 50, 50, 0.32);
+}
+
 .wrap_main_button:active{
 	transition: 0.3s;
 	border: 3px solid rgba(46, 50, 50, 0.32);
@@ -362,7 +386,7 @@ strong{
   background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-  height: 80px;
+  height: 85px;
   margin-top: 50px;
   padding: 25px 160px;
   padding-bottom: 25px;
@@ -390,6 +414,16 @@ strong{
 	width: 750px;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes slidein {
@@ -432,7 +466,178 @@ strong{
   }
 }
 
+#portfolio{
+	display: flex;
+	flex-direction: column;
+}
 
+.portfolio_header_h1{
+	font-family: RalewaySemiBold;
+	color: #555555;
+	font-size: 30pt;
+}
+
+.portfolio_header{
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+
+.portfolio_header_p{
+	font-family: MontserratLight;
+	font-size: 16pt;
+	color: #8c8c8c;
+	margin-top: 35px;
+	width: 770px;
+	text-align: center;
+}
+
+.portfolio_header_ul{
+	margin-top: 45px;
+	display: flex;
+	justify-content: center;
+}
+
+.ul_item{
+	height: 30px;
+	margin-left: 15px;
+	border-radius: 3px;
+	border: 1px solid #ebebeb;
+	color: #8c8c8c;
+	font-size: 14pt;
+	font-family: MontserratLight;
+	padding: 10px 25px;
+}
+
+
+.ul_item:nth-child(1){
+	margin-left: 0;
+	background: #998675;
+	color: white;
+}
+
+.ul_item:hover{
+	transition: 0.3s;
+	background: #998675;
+	color: white;
+}
+
+.portfolio_main1{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.portfolio_main_item{
+
+	margin-left: 30px;
+}
+
+
+.item_img {
+  position: relative
+
+}
+
+
+
+.a{
+    display: inline-block;
+}
+.a .div{
+    background: #000; 
+    overflow: hidden;
+    position: relative;  
+}
+.a .div .item_img{
+    opacity: 1;
+    transition: opacity 124ms linear, transform 124ms linear;  
+	width: 100%;
+	height: auto;
+    display: block; 
+}
+.a:hover .div .item_img{
+    opacity: 0.4; 
+}
+
+.a:hover {
+    opacity: 0.9; 
+}
+
+.a:hover .signature{
+    background: #362f2d; 
+    transition: 0.3s;
+}
+
+.a:hover  .div::before {
+    content: ''; 
+    z-index: 999;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; bottom: 0; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #362f2d; /* Добавляем треугольник */
+   }
+
+.a:hover .icon_img1{
+    visibility: visible;
+}
+
+.a:hover .icon_img2{
+    visibility: visible;
+}
+
+
+.icon_img1{
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	z-index: 9999;
+}
+
+.icon_img2{
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 9999;
+}
+
+
+.signature_p{
+	font-family: MontserratLight;
+	font-size: 14pt;
+	color: #d1d1d1;
+}
+
+.signature_h1{
+	font-family: RalewayMedium;
+	font-size: 20pt;
+	color: #c7b299;
+}
+
+.portfolio_button{
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.signature{
+	background: #fbfaf8;
+	padding: 35px 30px;
+}
+
+ .div::before {
+    content: ''; 
+    z-index: 999;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; bottom: 0; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #fbfaf8; /* Добавляем треугольник */
+   }
 
 
 @media (max-width: 1199px){
@@ -479,6 +684,11 @@ strong{
 		visibility: visible;
 	}
 
+	.portfolio_main1{
+		flex-wrap: wrap;
+	}
+
+
 	.cards{
 		flex-wrap: wrap;
 		width: 100%;
@@ -503,7 +713,6 @@ strong{
 
 	.card_p{
 		margin-bottom: 10px;
-		width: 100%;
 	}
 }
 
