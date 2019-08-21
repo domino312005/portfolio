@@ -9,6 +9,11 @@
 }
 
 @font-face{
+	font-family: RalewayBold;
+	src:url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face{
 	font-family: RalewayMedium;
 	src:url(fonts/Raleway-Medium.ttf);
 }
@@ -31,6 +36,11 @@
 @font-face{
 	font-family: RalewayRegular;
 	src:url(fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+	font-family: MontserratExtraLight;
+	src:url(fonts/Montserrat-ExtraLight.ttf);
 }
 
 
@@ -124,8 +134,117 @@ html, body {
 	height: 56px;
 }
 
+.img_logo_footer{
+	height: 56px;
+}
+
+
+.logotype{
+	display: flex;
+}
+
 .h3_logo{
 	margin-top: 56px;
+	color: white;
+	font-family: RalewayRegular;
+}
+
+.lorem{
+	color: #555555;
+	font-family: MontserratLight;
+	font-size: 10pt;
+	margin-top: 30px;
+	width: 270px;
+	margin-bottom: 60px;
+}
+
+.lorem2{
+	color: #555555;
+	font-family: MontserratLight;
+	font-size: 10pt;
+	margin-top: 30px;
+	width: 270px;
+	margin-bottom: 25px;
+}
+
+
+.lorem3{
+	color: #c7b299;
+	font-family: MontserratLight;
+	font-size: 10pt;
+	margin-top: 30px;
+	width: 270px;
+	margin-bottom: 25px;
+}
+
+.lorem2:hover{
+	color: #c7b299;
+}
+
+.lorem2:hover em{
+	color: white;
+}
+
+
+.readmore{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	height: 30px;
+}
+
+.part{
+	display: flex;
+	flex-direction: column;
+}
+
+.readmore:hover{
+	text-decoration: underline;
+	text-decoration-style: unset; 
+
+}
+
+.hr{
+	height: 1px;
+	width: 270px;
+	background: #252525;
+	margin-top: 0;
+}
+
+footer{
+	background: #191919;
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 80px;
+}
+
+.part{
+	margin-left: 35px;
+}
+
+.imgfooter{
+	transition: 0.3s;
+}
+
+.imgfooter:hover{
+	transform: scale(1.1);
+}
+
+
+.part:nth-child(1){
+	margin-left: 0;
+}
+
+.logo_text{
+	font-family: RalewayRegular;
+	color: white;
+	font-size: 34pt;
+}
+
+.recent{
+	font-family: RalewayBold;
+	font-size: 24pt;
 	color: white;
 }
 
@@ -292,13 +411,21 @@ i{
 .card_img_4{
 	margin-bottom: 25px;
 }
-hr{
+.hr1{
 	width: 50%;
 	height: 2%;
 	border-radius: 5px;
 	background: gray;
 	border:none;
 }
+
+hr{
+	width: 50%;
+	border-radius: 5px;
+	background: #252525;
+	border:none;
+}
+
 .card:hover .card_h1{
 	color: #c7b299;
 	transition: 0.2s;
@@ -501,6 +628,77 @@ strong{
 	justify-content: center;
 }
 
+.mobile_text{
+	margin-top: 110px;
+}
+
+.mobile_text_title{
+	font-family: RalewaySemiBold;
+	font-size: 30pt;
+	color: #555555;
+}
+
+.mobile_text_sig{
+	font-family: MontserratLight;
+	font-size: 16pt;
+	color: #8c8c8c;
+	width: 620px;
+}
+
+.n1{
+	display: flex;
+	justify-content: center;
+}
+
+.mobile_text_ul{
+	list-style-image: url(img/listStyleImg.png);
+	font-family: MontserratLight;
+	color: #8c8c8c;
+	font-size: 11pt;
+	margin-top: 70px;
+	margin-left: 30px;
+}
+
+#mobile{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.mobile_footer{
+	background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.number{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: white;
+	font-family: MontserratExtraLight;
+	font-size: 48pt;
+}
+
+
+
+.number_signature{
+	color: #c7b299;
+	font-size: 14pt;
+	font-family: MontserratLight;
+}
+
+.foot{
+	margin-left: 80px;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
 .ul_item{
 	height: 30px;
 	margin-left: 15px;
@@ -510,14 +708,11 @@ strong{
 	font-size: 14pt;
 	font-family: MontserratLight;
 	padding: 10px 25px;
+	cursor: pointer;
 }
 
 
-.ul_item:nth-child(1){
-	margin-left: 0;
-	background: #998675;
-	color: white;
-}
+
 
 .ul_item:hover{
 	transition: 0.3s;
@@ -573,6 +768,17 @@ strong{
     transition: 0.3s;
 }
 
+.ul_item_anim{
+	background: #998675;
+	color: white;
+}
+
+
+
+.ul_item_animno{color: #8c8c8c;
+background: white;
+}
+
 .a:hover  .div::before {
     content: ''; 
     z-index: 999;
@@ -623,11 +829,62 @@ strong{
 .portfolio_button{
 	margin: 0 auto;
 	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+
+.vidimg{
+	z-index: 9;
+	position: relative;
+}
+
+#video{
+	z-index: 0;
+	position: relative;
+	height: 705px;
+}
+
+.exit{
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	outline: none;
+	background: transparent;
+	background: black;
+	width: 40px;
+	height: 40px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	border-radius: 50px;
+	}
+
+
+	.exit:hover{
+		transition: 0.3s;
+		transform: scale(1.5);
+		color: black;
+		background: lightgray;
+	}
+
+
+.icon_play{
+	position: absolute;
+	top: 29%;
+	cursor: pointer;
+	z-index: 9999999999999;
 }
 
 .signature{
 	background: #fbfaf8;
 	padding: 35px 30px;
+}
+
+.vid{
+	display: flex;
+	justify-content: center;
+	position: relative;
 }
 
  .div::before {
@@ -638,6 +895,59 @@ strong{
     border: 10px solid transparent; /* Прозрачные границы */
     border-bottom: 10px solid #fbfaf8; /* Добавляем треугольник */
    }
+
+	.video{
+		-webkit-box-shadow: -23px 49px 130px 39px rgba(117,111,117,1);
+-moz-box-shadow: -23px 49px 130px 39px rgba(117,111,117,1);
+box-shadow: -23px 49px 130px 39px rgba(117,111,117,1); 
+	z-index: 9999999;
+	position: absolute;
+	left: 5%;
+	bottom: -500%;
+	width: 90%;
+	margin-bottom: 50px;
+	display: none;
+	background: none;
+	}
+
+	.no{
+		cursor: pointer;
+		text-align: center;
+	}
+
+
+	#video{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		cursor: pointer;
+	}
+
+
+	.up{
+		background: black;
+		width: 40px;
+		height: 40px;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		color: white;
+		text-align: center;
+		line-height: 40px;
+		cursor: pointer;
+		display: none;
+		border-radius: 50px;
+	}
+
+
+	.up:hover{
+		transition: 0.3s;
+		transform: scale(1.5);
+		color: black;
+		background: lightgray;
+	}
 
 
 @media (max-width: 1199px){
@@ -713,6 +1023,38 @@ strong{
 
 	.card_p{
 		margin-bottom: 10px;
+	}
+
+	.about_footer{
+		height: 200px;
+	}
+	
+	.up{
+		right: 7%;
+	}
+
+	footer{
+		flex-wrap: wrap;
+	}
+
+	.n1{
+		flex-wrap: wrap;
+	}
+	
+	.iphone{
+		margin-top: 10px;
+	}
+
+	.mobile_footer{
+		font-size: 10pt;
+	}
+
+	.mobile_text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
 	}
 }
 
