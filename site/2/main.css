@@ -88,6 +88,7 @@ html, body {
 	padding-right: 10px ;
 	padding-left: 100px;
 	overflow:hidden; 
+	justify-content: space-around;
 }
 
 .nav a{
@@ -147,6 +148,17 @@ html, body {
 	margin-top: 56px;
 	color: white;
 	font-family: RalewayRegular;
+}
+
+.spasibo{
+	font-size: 30pt;
+	color: yellow;
+
+}
+
+.spasibo a{
+	color: red;
+	font-size: 35pt;
 }
 
 .lorem{
@@ -252,10 +264,9 @@ footer{
 	font-size: 24pt;
 	font-family: Raleway;
 	display: flex;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-
-	animation-name: slidein;
+	position: absolute;
+	left: 100px;
+	top: 0;
 }
 
 .logo:hover{
@@ -289,6 +300,7 @@ footer{
 	color: white;
 	font-size: 8pt;
 	width: 350px;
+	text-align: center;
 }
 
 .wrap_main_button{
@@ -379,17 +391,25 @@ i{
 	display: none;
 	font-size: 14pt;
 	margin-top: 66px;
-	margin-left: 100px;
+	padding-right: 100px;
 }
 
 .cards{
 	display: flex;
-	padding: 80px 190px;
-	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top:80px;
+	justify-content: space-around;
 }
 
 .card{
 	text-align: center;
+	margin-left: 40px;
+	width: 250px;
+}
+
+.card:nth-child(1){
+	margin-left: 0;
 }
 
 .card:hover hr{
@@ -399,18 +419,7 @@ i{
 	transition: 0.2s;
 }
 
-.card_img_1{
-	margin-bottom: 10px;
-}
-.card_img_2{
-	margin-bottom: 20px;
-}
-.card_img_3{
-	margin-bottom: 15px;
-}
-.card_img_4{
-	margin-bottom: 25px;
-}
+
 .hr1{
 	width: 50%;
 	height: 2%;
@@ -499,7 +508,6 @@ strong{
 
 .nav-m li{
 	display: flex;
-	margin-left: 30px;
 	flex-wrap: wrap;
 	margin-bottom: 5px;
 }
@@ -532,6 +540,12 @@ strong{
 	margin: 0 auto;
 	margin-top: 100px;
 }
+.blabla{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 .about_p{
 	font-family: MontserratLight;
@@ -553,44 +567,9 @@ strong{
 
 
 
-@keyframes slidein {
-  25% {
-    transform:scale(0.1);
-  }
 
 
-  26% {
-    transform:scale(0.2);
-  }
-
-	28% {
-    transform:scale(0.3);
-  }
-
-  30% {
-    transform:scale(0.4);
-  }
-
-  32% {
-    transform:scale(0.5);
-  }
-
-  35% {
-    transform:scale(0.6);
-  }
-
-  37% {
-    transform:scale(0.7);
-  }
-
-  50% {
-    transform:scale(1);
-  }
-
-  55%{
-
-    transform:rotate(360deg);
-  }
+ 
 }
 
 #portfolio{
@@ -955,6 +934,7 @@ box-shadow: -23px 49px 130px 39px rgba(117,111,117,1);
 	.card{
 		font-size: 13pt;
 		margin-left: 40px;
+		width: 99%;
 }
 
 	.image{
@@ -965,26 +945,39 @@ box-shadow: -23px 49px 130px 39px rgba(117,111,117,1);
 	}
 
 .card:nth-child(1){
-		
-		margin-left: 0;
+		margin-left: 40px;
 }
 		.cards{
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 		flex-wrap: wrap;
-		padding: 0;
+		padding: 10px	;
 		padding-top: 80px;
 	}
-
-	.card_p{
-		margin-bottom: 15px;
+	.card_h1{
+		font-size: 32pt;
 	}
-
-	hr{
-		margin-bottom: 5%;
-	}
-
-
-
+	
+.card_p{
+	font-size: 24pt;
+	margin-bottom: 15px;
 }
+.card_p a{
+	font-size: 24pt;
+}
+hr{
+	margin-bottom: 5%;
+}
+
+.about_h1{
+	font-size: 34pt;
+}
+.about_p{
+	font-size: 26pt;
+}
+}
+
 
 @media (max-width: 991px){
 	.nav{
@@ -1006,7 +999,7 @@ box-shadow: -23px 49px 130px 39px rgba(117,111,117,1);
 		-ms-align-items: center;
 		align-items: center;
 		margin-top: 80px;
-		padding: 0;
+		padding: 10px	;
 	}
 
 	.swiper-container{
@@ -1055,6 +1048,12 @@ box-shadow: -23px 49px 130px 39px rgba(117,111,117,1);
 		justify-content: center;
 		-ms-align-items: center;
 		align-items: center;
+	}
+	.logo{
+		padding-left: 0;
+	}
+	header{
+		padding-left: 0;
 	}
 }
 
